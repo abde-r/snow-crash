@@ -1,0 +1,3 @@
+find / -xdev -user flag00 -print
+cat /usr/sbin/john
+cdiiddwpgswtgt
