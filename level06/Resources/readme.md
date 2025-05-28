@@ -1,3 +1,7 @@
-We change the content of the php program and make it useful for us to get the flag.
+# Override
+## walk-through
+- The binary file 'level06' executes any file with the name 'level06.php'.
 
-By overriding the program and running the executable, we get the flag.
+- Creating a new file with that name and overriding the program by changing its content to something like `<?php echo exec('getflag');?>`.
+
+- Running the executable with the 'malicious level06.php' file to get the flag.

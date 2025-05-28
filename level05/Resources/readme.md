@@ -1,7 +1,9 @@
-Once login into the fifth level, we get a message saying 'you have a new mail'.
+# CroneJob
+## walk-through
+- Once login into the fifth level, a popping message saying **'you have a new mail'**.
 
-Then we find a file in /var/mail with `*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05` as content.
+- The location of the mail file is /var/mail, with `*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05` as content.
 
-In /usr/sbin/openarenasever we find script that executes everything in the /opt/openarenaserver/* directory, which means this script is executed every 2 mins in the cronejob above.
+- Inside the above path, a cronejob is located, so everything inside that '/opt/openarenaserver/*' directory is executed every 2 mins.
 
-We create a simple script with a useful command in order to be executed and get the flag.
+- Creating a simple script with a useful command like `/bin/getflag > /tmp/flag05` in order to be executed to get the flag.

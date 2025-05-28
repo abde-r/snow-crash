@@ -1,3 +1,5 @@
-We cat the content of the binary file .pl. Seems like it's a CGI that that takes whatever we pass in the query parameter and sends it back to the browser.
+# CGI
+## walk-through
+- The perl program is a CGI script executed by a web server to handle HTTP requests.
 
-Again we expolit the content of x variable with something useful such as `curl 'http://localhost:4747/level04.pl?x=%24(getflag)'` to get the flag.
+- Since the script takes a variable as parameter and prints its value back. Passing a useful command such as `curl 'http://localhost:4747/level04.pl?x=$(getflag)'` would help to get the flag.
