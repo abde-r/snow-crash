@@ -1,6 +1,6 @@
 import socket
 
-HOST = '10.14.59.2'
+HOST = 'VM_IP'
 PORT = 6969
 
 def main():
